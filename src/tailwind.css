@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+    .input{
+        @apply px-3 py-2 outline-none ring-1 ring-blue-600 rounded-md;
+    }
+} */

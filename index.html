@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./output/tailwind.css" />
+  </head>
+  <body class=" h-screen flex justify-center items-center bg-gray-200 dark:bg-gray-950">
+    <form class="px-4 py-5 shadow-lg rounded-md bg-white dark:bg-gray-800" id="form ">
+      <p class="text-center font-bold text-blue-400 p-2 text-3xl pb-5">Wellcome Back</p>
+
+      <input type="email" name="email" id="email" placeholder="example@gmail.com" required class="w-80 px-3 py-2 outline-none ring-1 ring-blue-600 rounded-md"> <br>
+
+      <input type="password" name="password" id="password" placeholder="password" required class=" w-80 px-3 py-2 outline-none ring-1 ring-blue-600 rounded-md mt-3"> <br>
+
+      <p class="text-blue-500 cursor-pointer mt-2">forget password?</p>
+      <input type="submit" class="bg-blue-700 w-80 px-3 py-2 rounded-md my-3 hover:bg-blue-600 text-white cursor-pointer" id="submit">
+    </form>
+    <script>
+      let form = document.getElementById("form");
+      let submitBtn = form.getElementById("submit");
+      submitBtn.addEventListener("click", () => {
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
